@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Codes and Ciphers</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/js/caesar.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Caesar Cipher</h1>
+        <div>
+          <p>The Caesar cipher, also known as a shift cipher, is a simple text shifting cipher, where one letter is directly swapped for another:</p>
+          <pre>
+      YVXR GUVF
+      LIKE THIS
+          </pre>
+          <p>This cipher in particular the numbers are shifted, traditionally by 13 i.e. the first letter is A. 1+13 is 14, the 14th letter is N. Thus A = N.</p>
+          <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Caesar_cipher_left_shift_of_3.svg/1200px-Caesar_cipher_left_shift_of_3.svg.png" width="50%" alt="example of shift cipher"><br><caption>Image from <a href="https://en.wikipedia.org/wiki/Caesar_cipher">Wikipedia</caption></a></div>
+        </div>
+        <div>
+          <h2>Encrypt your own message!</h2>
+          <p>Enter your message for encryption:</p>
+          <textarea id="plainText" rows="4" cols="50" placeholder="Your message here"></textarea>
+          <div>
+                <label>Shift: <select id="keyShift" name="keyShift" size="1"> 
+                <option value="0" selected="selected">0</option> 
+                <option value="1">1</option> 
+                <option value="2">2</option> 
+                <option value="3">3</option> 
+                <option value="4">4</option> 
+                <option value="5">5</option> 
+                <option value="6">6</option> 
+                <option value="7">7</option> 
+                <option value="8">8</option> 
+                <option value="9">9</option> 
+                <option value="10">10</option> 
+                <option value="11">11</option> 
+                <option value="12">12</option> 
+                <option value="13">13</option> 
+                <option value="14">14</option> 
+                <option value="15">15</option> 
+                <option value="16">16</option> 
+                <option value="17">17</option> 
+                <option value="18">18</option> 
+                <option value="19">19</option> 
+                <option value="20">20</option> 
+                <option value="21">21</option> 
+                <option value="22">22</option> 
+                <option value="23">23</option> 
+                <option value="24">24</option> 
+                <option value="25">25</option> 
+            </select></label>
+            <button onClick="encrypt()">Encrypt &darr;</button> 
+            <button onClick="decrypt()">Decrypt &uarr;</button>  
+            </div>
+          <textarea id="encryptedText" rows="4" cols="50" placeholder="Your encrypted message will appear here"></textarea>
+        </div>
+      </div>
+</body>
+</html>
